@@ -1,0 +1,81 @@
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #110f0f; /* set the default text color to black */
+    background-color: #2f2e2e;
+    margin: 0px;
+}
+h2 {
+    color: F15A24;
+}
+/* Define the header styles */
+.TopNavbar {
+    background-color: #110f0f; 
+    color: #F15A24; 
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.TopNavbar h1 {
+    font-size: 36px;
+    margin: 0;
+}
+.TopNavbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 50px; 
+}
+.TopNavbar nav ul li {
+    margin-right: -30px;
+    transform: rotate(-45deg);
+}
+.TopNavbar nav ul li a {
+    color: #F15A24;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.TopNavbar nav ul li a:hover {
+    color: #110f0f;
+    background-color: #F15A24;
+
+}
+
+.Body {
+    margin: 20px;
+}
+
+button {
+    color: #F15A24;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+  background-color: #F15A24;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+button:hover {
+  color: #110f0f;
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #F15A24;
+  color: #110f0f;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
