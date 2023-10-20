@@ -1,20 +1,33 @@
+:root {
+    --grey1: #1a1817;
+    --grey2: #33302f;
+    --grey3: #66605e;
+    --grey4: #99908d;
+    --grey5: #f2f3f4;
+    --flame: #d4642c;
+    --JungleGreen: #29ab87;
+    --TrueBlue: #3f6aba;
+    --PersianRed: #c24040;
+    --DarkerPersianRed: #7c2727;
 
+}
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #110f0f; /* set the default text color to black */
-    background-color: #2f2e2e;
-    margin: 0px;
+    color: var(--grey1);
+    background-color: var(--grey2);
+    margin: 20px;
+    text-align: center;
+
 }
-h2 {
-    color: F15A24;
-}
+
+
 /* Define the header styles */
 .TopNavbar {
-    background-color: #110f0f; 
-    color: #F15A24; 
+    background-color: var(--grey1); 
+    color: var(--flame); 
     padding: 20px;
-    margin: 0px;
+    margin: -20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +50,7 @@ h2 {
     transform: rotate(-45deg);
 }
 .TopNavbar nav ul li a {
-    color: #F15A24;
+    color: var(--flame);
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -46,36 +59,78 @@ h2 {
 }
 
 .TopNavbar nav ul li a:hover {
-    color: #110f0f;
-    background-color: #F15A24;
+    color: var(--grey1);
+    background-color: var(--flame);
 
 }
 
-.Body {
-    margin: 20px;
+.Centred-Box {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
+#Blog {
+    background-color: var(--grey1);
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 3px solid var(--flame);
+    color: var(--grey5);
+    border-radius: 25px;
+}
+
+#project-list {
+    dislay:flex;
+}
+
 
 button {
-    color: #F15A24;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 20px;
-    transition: 0.3s;
+  align-items: center;
+  background-color: var(--flame);
+  border: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: var(--grey1);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: 0.3s
+
 }
 
-button:hover {
-  background-color: #F15A24;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-button:hover {
-  color: #110f0f;
-  transform: translateY(-1px);
+button:hover,
+button:focus { 
+  background-color: var(--PersianRed);
 }
 
 button:active {
-  background-color: #F15A24;
-  color: #110f0f;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
+  background: var(--DarkerPersianRed);
+
 }
+
+
+
+.post-box {
+    border: 3px solid var(--flame);
+    background-color: var(--grey2);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+
+
