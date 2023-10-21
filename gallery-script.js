@@ -16,6 +16,6 @@ const basePath = "PlayingCardDesigns/"; // Set your base file path here
 imageFileNames.forEach(fileName => {
     const image = document.createElement("img");
     image.src = basePath + fileName;
-    image.width = window.innerWidth*0.4
+    image.width = window.innerWidth*0.3
     gallery.appendChild(image);
 });
