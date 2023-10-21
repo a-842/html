@@ -2,7 +2,7 @@ const posts = [
     {
         title: "Sample Text",
         content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        date: "2023-10-10",
+        date: "2023-10-14",
         project: "Project A"
     },
     {
@@ -24,9 +24,8 @@ function renderBlogPosts(posts) {
         postElement.className = "post";
         postElement.innerHTML = `
             <div class="post-box">
-                <h2>${post.title}</h2><p>${post.date}</p>
+                <h2>${post.project} - ${post.title} - <small>${post.date}</small></h2>
                 <p>${post.content}</p>
-                <p>Project: ${post.project}</p>
             </div>
             <br>
         `;
@@ -36,7 +35,7 @@ function renderBlogPosts(posts) {
 
 // Initial rendering of all posts
 renderBlogPosts(posts);
-
+    
 const projectList = document.getElementById("project-list");
 
 // Function to filter and render blog posts by project
