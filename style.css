@@ -21,6 +21,10 @@ body {
 
 }
 
+h1 {
+    font-size: 72px;
+}
+
 
 /* Define the header styles */
 .TopNavbar {
@@ -70,7 +74,12 @@ body {
     min-height: 100vh;
 }
 
-#Blog {
+
+#project-list {
+    dislay:flex;
+}
+
+.Gallery {
     background-color: var(--grey1);
     padding: 20px;
     margin-left: 150px;
@@ -78,10 +87,6 @@ body {
     border: 3px solid var(--flame);
     color: var(--grey5);
     border-radius: 25px;
-}
-
-#project-list {
-    dislay:flex;
 }
 
 
